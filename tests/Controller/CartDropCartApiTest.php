@@ -61,10 +61,7 @@ final class CartDropCartApiTest extends JsonApiTestCase
      */
     public function it_returns_not_found_exception_if_order_is_in_different_state_then_cart()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
-        $this->loadFixturesFromFile('payment.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml', 'payment.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

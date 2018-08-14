@@ -29,8 +29,7 @@ final class CartApiTest extends JsonApiTestCase
      */
     public function it_calculates_estimated_shipping_cost_based_on_country()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('shipping.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'shipping.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 
@@ -48,9 +47,7 @@ final class CartApiTest extends JsonApiTestCase
      */
     public function it_calculates_estimated_shipping_cost_based_on_country_and_province()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

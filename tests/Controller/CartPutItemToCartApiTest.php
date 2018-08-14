@@ -229,10 +229,7 @@ EOT;
      */
     public function it_does_not_allow_to_add_product_if_order_has_been_placed()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
-        $this->loadFixturesFromFile('payment.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml', 'payment.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

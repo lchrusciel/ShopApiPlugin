@@ -98,8 +98,7 @@ EOT;
      */
     public function it_does_not_allow_to_register_in_shop_if_email_is_already_taken()
     {
-        $this->loadFixturesFromFile('customer.yml');
-        $this->loadFixturesFromFile('channel.yml');
+        $this->loadFixturesFromFiles(['customer.yml', 'channel.yml']);
 
         $data =
 <<<EOT

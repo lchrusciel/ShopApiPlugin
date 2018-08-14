@@ -1,3 +1,6 @@
+include:
+    - channel.yml
+
 Sylius\Component\Core\Model\Promotion:
     holiday_promotion:
         code: "HOLIDAY_PROMOTION"

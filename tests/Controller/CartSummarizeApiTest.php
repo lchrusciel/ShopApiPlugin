@@ -167,8 +167,7 @@ EOT;
      */
     public function it_shows_summary_of_a_cart_with_coupon_applied()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('coupon_based_promotion.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'coupon_based_promotion.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

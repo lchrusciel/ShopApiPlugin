@@ -14,7 +14,7 @@ final class TaxonShowDetailsApiTest extends JsonApiTestCase
      */
     public function it_shows_summary_of_a_chosen_taxon()
     {
-        $this->loadFixturesFromFile('shop.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'customer.yml', 'mug_review.yml']);
 
         $this->client->request('GET', '/shop-api/taxons/T_SHIRTS?locale=en_GB', [], [], ['ACCEPT' => 'application/json']);
         $response = $this->client->getResponse();

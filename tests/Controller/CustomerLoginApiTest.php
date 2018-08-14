@@ -27,7 +27,7 @@ final class CustomerLoginApiTest extends JsonApiTestCase
 <<<EOT
         {
             "_username": "oliver@queen.com",
-            "_password": "123pa\$\$word"
+            "_password": "123pa!!word"
         }
 EOT;
 

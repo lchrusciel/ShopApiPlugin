@@ -1,3 +1,6 @@
+include:
+    - channel.yml
+
 Sylius\Component\Core\Model\ShippingMethod:
     ups:
         code: "UPS"

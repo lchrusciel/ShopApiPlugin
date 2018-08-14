@@ -105,9 +105,7 @@ EOT;
      */
     public function it_shows_an_order_with_chosen_shipment()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 
@@ -157,9 +155,7 @@ EOT;
      */
     public function it_modifies_shipping_cost_when_changing_item_quantity()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 
@@ -220,10 +216,7 @@ EOT;
      */
     public function it_shows_an_order_with_chosen_payment()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
-        $this->loadFixturesFromFile('payment.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml', 'payment.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

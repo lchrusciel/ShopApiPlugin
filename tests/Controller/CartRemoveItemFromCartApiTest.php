@@ -57,8 +57,7 @@ final class CartRemoveItemFromCartApiTest extends JsonApiTestCase
      */
     public function it_reprocesses_the_order_after_deleting_an_item()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('promotion.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'promotion.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

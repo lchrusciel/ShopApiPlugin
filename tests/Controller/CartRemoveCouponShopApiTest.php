@@ -20,8 +20,7 @@ final class CartRemoveCouponShopApiTest extends JsonApiTestCase
      */
     public function it_allows_to_remove_a_promotion_coupon_from_the_cart()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('coupon_based_promotion.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'coupon_based_promotion.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 
@@ -43,8 +42,7 @@ final class CartRemoveCouponShopApiTest extends JsonApiTestCase
      */
     public function it_allows_to_remove_a_promotion_coupon_from_the_cart_even_if_it_does_not_exist()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('coupon_based_promotion.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'coupon_based_promotion.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 

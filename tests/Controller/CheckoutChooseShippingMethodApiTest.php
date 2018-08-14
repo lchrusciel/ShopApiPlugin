@@ -19,9 +19,7 @@ final class CheckoutChooseShippingMethodApiTest extends JsonApiTestCase
      */
     public function it_allows_to_choose_shipping_method()
     {
-        $this->loadFixturesFromFile('shop.yml');
-        $this->loadFixturesFromFile('country.yml');
-        $this->loadFixturesFromFile('shipping.yml');
+        $this->loadFixturesFromFiles(['shop.yml', 'country.yml', 'shipping.yml']);
 
         $token = 'SDAOSLEFNWU35H3QLI5325';
 
