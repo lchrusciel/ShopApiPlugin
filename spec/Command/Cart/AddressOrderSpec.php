@@ -34,7 +34,7 @@ final class AddressOrderSpec extends ObjectBehavior
         );
     }
 
-    function it_has_order_token(): void
+    function it_has_an_order_token(): void
     {
         $this->orderToken()->shouldReturn('ORDERTOKEN');
     }

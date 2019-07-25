@@ -13,7 +13,7 @@ final class PutVariantBasedConfigurableItemToCartSpec extends ObjectBehavior
         $this->beConstructedWith('ORDERTOKEN', 'T_SHIRT_CODE', 'RED_SMALL_T_SHIRT_CODE', 5);
     }
 
-    function it_has_order_token(): void
+    function it_has_an_order_token(): void
     {
         $this->orderToken()->shouldReturn('ORDERTOKEN');
     }

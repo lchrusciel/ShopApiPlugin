@@ -13,7 +13,7 @@ final class AddCouponSpec extends ObjectBehavior
         $this->beConstructedWith('ORDERTOKEN', 'COUPON_CODE');
     }
 
-    public function it_has_order_token(): void
+    public function it_has_an_order_token(): void
     {
         $this->orderToken()->shouldReturn('ORDERTOKEN');
     }

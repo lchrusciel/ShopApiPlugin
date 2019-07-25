@@ -13,7 +13,7 @@ final class AssignCustomerToCartSpec extends ObjectBehavior
         $this->beConstructedWith('ORDERTOKEN', 'example@customer.com');
     }
 
-    function it_has_order_token(): void
+    function it_has_an_order_token(): void
     {
         $this->orderToken()->shouldReturn('ORDERTOKEN');
     }

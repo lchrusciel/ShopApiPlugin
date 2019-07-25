@@ -13,7 +13,7 @@ final class ChoosePaymentMethodSpec extends ObjectBehavior
         $this->beConstructedWith('ORDERTOKEN', 1, 'CASH_ON_DELIVERY_METHOD');
     }
 
-    function it_has_order_token(): void
+    function it_has_an_order_token(): void
     {
         $this->orderToken()->shouldReturn('ORDERTOKEN');
     }
